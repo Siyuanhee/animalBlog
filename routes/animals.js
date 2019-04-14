@@ -104,7 +104,11 @@ router.put("/:id", async (req,res) => {
                 await postData.removePost(animal.posts[i]._id)
             }
             await animalData.deleteAnimal(req.params.id)
-            res.json(animal)
+            const output = {
+                deleted: true,
+                data: animal
+            }
+            res.json(output)
         } catch (e) {
             res.sendStatus(500);
             return;

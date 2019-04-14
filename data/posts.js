@@ -30,7 +30,7 @@ const exportedMethods = {
     },
 
     async getPostById(id) {
-        if(!id)  throw "You must provide an id to remove";
+        if(!id)  throw "You must provide an id";
         const postCollection = await posts();
         const post = await postCollection.findOne({ _id: id });
         if (!post) throw "Post not found";
@@ -49,7 +49,7 @@ const exportedMethods = {
     },
 
     async getPostByOwner(id) {
-        if(!id)  throw "You must provide an id to remove";
+        if(!id)  throw "You must provide an id";
         const postCollection = await posts();
         const post = await postCollection.find({ author: id }).toArray();
         if (!post) throw "Post not found";
