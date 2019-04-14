@@ -1,0 +1,17 @@
+{
+  "name": "cs-546-lab-7",
+  "version": "1.0.0",
+  "description": "my lab 7 module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Siyuan He 10429855",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "mongodb": "^3.2.3",
+    "node-uuid": "^1.4.8"
+  }
+}
